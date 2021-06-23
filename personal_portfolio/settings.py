@@ -120,11 +120,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/home/MateoBernasconi/django3-portfolio/portfolio/static/portfolio'
+STATIC_ROOT = '/home/MateoBernasconi/django3-portfolio/static'
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = '/home/MateoBernasconi/django3-portfolio/images/images'
+MEDIA_ROOT = '/home/MateoBernasconi/django3-portfolio/images'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
