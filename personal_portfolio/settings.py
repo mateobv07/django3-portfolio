@@ -124,9 +124,14 @@ STATIC_ROOT = '/home/MateoBernasconi/django3-portfolio/portfolio/static/portfoli
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = '/home/MateoBernasconi/django3-portfolio/images'
+MEDIA_ROOT = '/home/MateoBernasconi/django3-portfolio/images/images'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+try:
+    from .local_settings import *
+except ImportError:
+    print("Looks like no local file must be on production/liveserver")
