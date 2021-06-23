@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8aq5#(wwhkp!eo@nv-lg)$x##y+f3%d7jzqyq)3hp195bqyd-w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mateobernasconi.pythonanywhere.com']
 
 
 # Application definition
@@ -120,10 +120,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/home/MateoBernasconi/django3-portfolio/portfolio/static/portfolio'
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = Path(__file__).resolve().parent.parent
+MEDIA_ROOT = '/home/MateoBernasconi/django3-portfolio/images'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
